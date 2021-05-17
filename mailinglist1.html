@@ -25,7 +25,7 @@ On donne a la variable email la valeur (value) du champ (name="email") du formul
  if ((email.length<1)||(email.substring(0,6)=="******"))
  {
  alert("Vous devez obligatoirement saisir votre e-mail");
- document.ajout.email.value="******Complétez ce champ";
+ document.ajout.email.value="******Complï¿½tez ce champ";
  document.ajout.email.focus();
  document.ajout.email.select();
  return false;
@@ -40,7 +40,7 @@ prenom=document.ajout.prenom.value;
  if ((prenom.length<1)||(prenom.substring(0,6)=="******"))
  {
  alert("Vous devez obligatoirement saisir votre prenom");
- document.ajout.prenom.value="******Complétez ce champ";
+ document.ajout.prenom.value="******Complï¿½tez ce champ";
  document.ajout.prenom.focus();
  document.ajout.prenom.select();
  return false;
@@ -57,7 +57,7 @@ nom=document.ajout.nom.value;
  if ((nom.length<1)||(nom.substring(0,6)=="******"))
  {
  alert("Vous devez obligatoirement saisir votre nom");
- document.ajout.nom.value="******Complétez ce champ";
+ document.ajout.nom.value="******Complï¿½tez ce champ";
  document.ajout.nom.focus();
  document.ajout.nom.select();
  return false;
@@ -72,7 +72,7 @@ cpostal=document.ajout.cpostal.value;
  if ((cpostal.length<1)||(cpostal.substring(0,6)=="******"))
  {
  alert("Vous devez obligatoirement saisir votre code postal");
- document.ajout.cpostal.value="******Complétez ce champ";
+ document.ajout.cpostal.value="******Complï¿½tez ce champ";
  document.ajout.cpostal.focus();
  document.ajout.cpostal.select();
  return false;
@@ -80,10 +80,10 @@ cpostal=document.ajout.cpostal.value;
 
 
 /*
-Dans notre condition if on dit que notre variable (donc la valeur du champ) ne doit pas être inférieur à 1 caractère (vous pouvez mettre plus hein) grace à la propriété length qui retourne la valeur correspondant au nombre de caractères de la chaîne.
-On y indique aussi (en utilisant l'opérateur logique ||, aussi appelé "OR") que les 6 premiers caractères ne sont pas des *, vous comprendrez pourquoi en lisant la suite.
+Dans notre condition if on dit que notre variable (donc la valeur du champ) ne doit pas ï¿½tre infï¿½rieur ï¿½ 1 caractï¿½re (vous pouvez mettre plus hein) grace ï¿½ la propriï¿½tï¿½ length qui retourne la valeur correspondant au nombre de caractï¿½res de la chaï¿½ne.
+On y indique aussi (en utilisant l'opï¿½rateur logique ||, aussi appelï¿½ "OR") que les 6 premiers caractï¿½res ne sont pas des *, vous comprendrez pourquoi en lisant la suite.
 
-Si l'une ou l'autre des conditions est remplie on envoi un message d'alerte, on incrit "******Veuillez compléter ce champ" dans le champ et on remet le focus dans le champ.
+Si l'une ou l'autre des conditions est remplie on envoi un message d'alerte, on incrit "******Veuillez complï¿½ter ce champ" dans le champ et on remet le focus dans le champ.
 */
  else { return true; } // sinon on retourne "vrai"
 
@@ -97,24 +97,24 @@ function verifMail(a)
 {
 testm = false ;
 /*
-la on spécifie que l'adresse est false (fausse) dès le début. Cela permet de pouvoir dire que si rien n'est entré dans le champ l'adresse est fausse.
+la on spï¿½cifie que l'adresse est false (fausse) dï¿½s le dï¿½but. Cela permet de pouvoir dire que si rien n'est entrï¿½ dans le champ l'adresse est fausse.
 */ 
 
  for (var j=1 ; j<(a.length) ; j++) {
 
 /*
-Ici, ouverture d'une boucle for à 1 qui permettra de tester du premier jusqu'au dernier caractère de l'adresse e-mail entrée.
+Ici, ouverture d'une boucle for ï¿½ 1 qui permettra de tester du premier jusqu'au dernier caractï¿½re de l'adresse e-mail entrï¿½e.
 */ 
 
   if (a.charAt(j)=='@') {
 // La on commence les conditions de tests. Ici on cherche l'@
    if (j<(a.length-4)){
-// Ici on regarde si il y a bien 4 caractère après le @
+// Ici on regarde si il y a bien 4 caractï¿½re aprï¿½s le @
     for (var k=j ; k<(a.length-2) ; k++) {
 // On ouvre une seconde boucle pour 
      if (a.charAt(k)=='.') testm = true;
 /*
-on vérifie qu'il y ai bien un point et on met la variable testm à true (implicitement si toutes les conditions sont remplies) puis on ferme les conditions et boucles
+on vï¿½rifie qu'il y ai bien un point et on met la variable testm ï¿½ true (implicitement si toutes les conditions sont remplies) puis on ferme les conditions et boucles
 */
     }
    }
@@ -123,11 +123,11 @@ on vérifie qu'il y ai bien un point et on met la variable testm à true (implicit
 
 
 if (testm==false) alert('Votre adresse e-mail est incorrecte.');
-// si testm est évalué à false, on ouvre une boite d'alerte pour prévenir. 
+// si testm est ï¿½valuï¿½ ï¿½ false, on ouvre une boite d'alerte pour prï¿½venir. 
 
 /* else alert('Votre adresse e-mail semble correcte.'); 
-Cette boite d'alerte est facultative, ici c'est pour le besoin de la démonstration. Chez vous,
-vous pouvez complètement enlever cette condition else car si c'est true le traitement du formulaire peut avoir lieu.
+Cette boite d'alerte est facultative, ici c'est pour le besoin de la dï¿½monstration. Chez vous,
+vous pouvez complï¿½tement enlever cette condition else car si c'est true le traitement du formulaire peut avoir lieu.
 */ 
 
 return testm ;
@@ -175,7 +175,7 @@ return testm ;
     <TR><br /></TR>
 
    <TR>
-       <A TITLE="1&egrave;re Page d' Accueil" href="index.php">Accueil</A>
+       <A TITLE="1&egrave;re Page d' Accueil" href="index.html">Accueil</A>
     </TR>
     <TR><br /></TR>
 
@@ -189,18 +189,18 @@ return testm ;
     <TR><br /></TR>
 
     <TR>
-	<!-- Lien interne sur page exemples.php -->
+	<!-- Lien interne sur page exemples.html -->
        <strong>
-            <A TITLE="Exemples de Webzines mensuels" href="exemples2.php">Exemples</A>
+            <A TITLE="Exemples de Webzines mensuels" href="exemples2.html">Exemples</A>
        </stronG>
     </TR>
     <TR><br /></TR>
 
     
     <TR>
-	<!-- Lien interne sur page liensamis.php --> 
+	<!-- Lien interne sur page liensamis.html --> 
        <strong>
-       <A TITLE="Liens Sites Amis" href="liensamis3.php">Liens Amis</A>
+       <A TITLE="Liens Sites Amis" href="liensamis3.html">Liens Amis</A>
        </stronG>
     </TR>
     <TR><br /></TR>
@@ -213,7 +213,7 @@ return testm ;
        <!-- Formulaire de saisie pour la Mailing list -->
        <h1> Abonnement au Webzine </h1>
 
-       <form name=ajout method="post" action="http://www.lamarzina.com/inscription2.php" onsubmit="return noEntry()">
+       <form name=ajout method="post" action="http://www.lamarzina.com/inscription2.html" onsubmit="return noEntry()">
         <p><br /><br /></p>
 
         <p>Votre E-mail :
@@ -260,17 +260,17 @@ return testm ;
     <TR><br /></TR>
 
     <TR>
-        <!-- Lien interne sur page mailinglist.php-->
+        <!-- Lien interne sur page mailinglist.html-->
 		<strong>
-          <A TITLE="Abonnement Webzine La Marzina"" href="mailinglist1.php">Newsletter</A>
+          <A TITLE="Abonnement Webzine La Marzina"" href="mailinglist1.html">Newsletter</A>
         </strong>
     </TR>
     <TR><br /></TR>
 
     <TR>
-	 <!-- Lien interne sur page evenementiels.php --> 
+	 <!-- Lien interne sur page evenementiels.html --> 
        <strong>
-       <A TITLE="Ev&egrave;nements musicaux" HREF="evenementiels3.php">Ev&egrave;nementiels</A>
+       <A TITLE="Ev&egrave;nements musicaux" HREF="evenementiels3.html">Ev&egrave;nementiels</A>
        </stronG>
     </TR>
     <TR><br /></TR>
@@ -285,8 +285,8 @@ return testm ;
    <TR><br /></TR>
 
    <TR VALIGN="Bottom">
-     <!-- Lien interne sur page contact.php --> 
-    		 <A TITLE="Adresses de Contact" href="contact1.php">Contact</A>
+     <!-- Lien interne sur page contact.html --> 
+    		 <A TITLE="Adresses de Contact" href="contact1.html">Contact</A>
    </TR>
    <TR><br /></TR>
 
