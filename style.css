@@ -1,0 +1,29 @@
+body {font-family: Arial, Helvetica, sans-serif;
+     }
+div {margin: 0px;
+    padding: 0px;
+    }
+input, textarea {text-align: justify;
+                 color: purple;
+                 font-family: comic;
+                 }
+input.pcprenom {text-transform: capitalize;
+               }
+input.pcnom {text-transform: uppercase;
+            }
+input.pcsubmit {text-align: center;
+               text-transform: uppercase;
+               color: #000;
+               font-weight: 500;
+              }
+#cqright {position: absolute;
+         top: 750px;
+         left: 280px;
+         width: 400px;
+         height: 25px;
+         text-align: center;
+         background-color: ####;
+         }
+.pas_copier1 {
+	    background:url('IMG\image_a_copier.gif'center center no-repeat;
+            } 
